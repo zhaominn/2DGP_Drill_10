@@ -40,6 +40,7 @@ class Run:
     def draw(bird):
         if bird.dir==1:
             bird.image.clip_draw(int(bird.frame) * 183, bird.action * 167, 183, 167, bird.x, bird.y)
+            
         elif bird.dir==-1:
             bird.image.clip_composite_draw(int(bird.frame) * 183, bird.action * 167,183,167, 0, 'h', bird.x, bird.y)
 
